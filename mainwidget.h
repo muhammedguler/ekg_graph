@@ -9,7 +9,7 @@ class QHBoxLayout;
 class QVBoxLayout;
 class QLabel;
 class QFile;
-
+class Mcp3208;
 
 class MainWidget : public QWidget
 {
@@ -19,6 +19,7 @@ class MainWidget : public QWidget
 		QCustomPlot* m_pRealTimePlot;
 		QTimer* m_pDataTimer;
 		QLabel* m_pStatusLabel;
+		Mcp3208* m_pMcp3208;
 
 	public:
 		explicit MainWidget(QWidget *parent = 0);
